@@ -1,0 +1,73 @@
+.bg-vid {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin:0;
+     min-width: 100%;
+     max-height:100vh;
+     width: auto;
+     z-index: -100;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+     -moz-transform: translateX(-50%) translateY(-50%);
+     -ms-transform: translateX(-50%) translateY(-50%);
+     -o-transform: translateX(-50%) translateY(-50%);
+     transform: translateX(-50%) translateY(-50%);
+}
+.bg-vid video {
+	background-attachment: fixed;
+  background-size: cover;
+  overflow:hidden;
+
+}
+.no-scroll .scroll-content{
+     overflow: hidden;
+}
+page-school{
+  font-size: 14px;
+  font-family: "Lato",sans-serif;
+  background-color:#333;
+}
+header h2 {
+    font-size: 1rem;
+    letter-spacing: 7px;
+    color:white;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    -moz-transition: all,0.8s;
+    -o-transition: all,0.8s;
+    -webkit-transition: all,0.8s;
+    transition: all,0.8s;
+}
+.playfair {
+    font-family: "Playfair Display",serif;
+    text-transform: none;
+    font-style: italic;
+    color:white;
+    font-size: xx-large;
+}
+header {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  min-width:100%;
+}
+video{
+  filter:brightness(35%);
+}
+.schoolDesc{
+  margin-top:30%;
+  text-align: center;
+  color:white;
+  font-size: 20px;
+  font-family: "Lato",sans-serif;
+}

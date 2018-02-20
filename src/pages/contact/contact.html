@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="color:white;">
+      <ion-searchbar (window:keydown)="onKey($event)" [animated]="true" [(ngModel)]="terms" placeholder="Oeuvre/Artiste"></ion-searchbar>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page test">
+  <ion-grid>
+    <div *ngIf="oeuvres !==''">
+      <ion-card [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms">
+        <img src={{oeuvre.image}}/>
+        <div class="card-title">{{oeuvre.title}}</div>
+        <div class="card-subtitle">{{oeuvre.author}}</div>
+      </ion-card>
+    </div>
+    <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">
+      <ion-card>
+        <ion-card-header>
+          <ion-row>
+            <ion-icon class="larger" name="sad"></ion-icon>
+          </ion-row>
+          <ion-row>
+            Oops !
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          Aucune oeuvre ne correspond à cette recherche.
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-grid>
+</ion-content>

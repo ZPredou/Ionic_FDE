@@ -1,0 +1,22 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>
+      <div style="color:black;">Exposition Virtuelle</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+  <header>
+    <h1 class="playfair" style="color:black!important">L'éxposition virtuelle</h1>
+  </header>
+    <ion-card (click)="goToPlans()" block>
+      <img class="darken small" src="assets/imgs/compass.jpg">
+      <div class="card-title">L'éspace</div>
+      <div class="card-subtitle">Un accès aux oeuvres via un plan</div>
+    </ion-card>
+    <ion-card class="card-background-page" (click)="goToOeuvres()" block>
+      <img class="darken small" src="assets/imgs/americathebeautiful.jpg">
+      <div class="card-title">Les oeuvres</div>
+      <div class="card-subtitle">Un accès direct aux différentes oeuvres</div>
+    </ion-card>
+</ion-content>
