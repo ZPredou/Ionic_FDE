@@ -26576,7 +26576,30 @@ img.darken {
 }
 
 img.small {
-  max-height: 37vh;
+  height: 37vh;
+}
+
+/* Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  img.small {
+    height: 42vh !important;
+  }
+  h1.playfair {
+    font-style: uppercase;
+  }
+}
+
+/* Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h2.nomArtist {
+    font-size: 3.5rem !important;
+  }
+  .item-ios p {
+    padding-top: 30px;
+  }
+  .button-inner {
+    font-size: 1.7em !important;
+  }
 }
 
 .card-background-page ion-card {
@@ -26644,6 +26667,21 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
   min-height: 100% !important;
 }
 
+/* Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  div.card-title {
+    font-size: 4em !important;
+    text-transform: uppercase !important;
+  }
+  div.card-subtitle {
+    font-size: 2.5em !important;
+    top: 70% !important;
+  }
+  ion-card.samesize {
+    height: 42vh !important;
+  }
+}
+
 audio {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
@@ -26666,6 +26704,50 @@ ion-row {
   background-color: #fcc500;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fede00), to(#fcc500));
   background-image: linear-gradient(to bottom, #fede00 0%, #fcc500 100%);
+}
+
+/* Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .oeuvreshow {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 2.5rem !important;
+  }
+}
+
+audio {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+ion-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#amazingaudioplayer-AUDIOPLAYERID .amazingaudioplayer-progress-played {
+  border-radius: 4px;
+  background-color: #fcc500;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fede00), to(#fcc500));
+  background-image: linear-gradient(to bottom, #fede00 0%, #fcc500 100%);
+}
+
+/* Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .oeuvreshow {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 2.5rem !important;
+  }
 }
 
 .homeBack {
@@ -26771,8 +26853,8 @@ button.fab.fab-md.fab-close-active {
 }
 
 img .logo {
-  height: 70vh;
-  width: auto;
+  height: 35vh;
+  width: 100%;
   margin: auto;
   display: block;
 }
@@ -26821,6 +26903,28 @@ p > .undertext {
 
 .fabshow {
   opacity: 1;
+}
+
+/* Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  img.logo {
+    height: 85vh;
+    min-width: 100%;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    padding-top: 75px;
+    font-size: 40px;
+  }
+  p.undertext {
+    padding-top: 40px;
+    font-size: 25px;
+  }
+  button.calltofde {
+    font-size: 25px;
+  }
 }
 
 .list .item.item-accordion {
@@ -26884,7 +26988,6 @@ header h2 {
 .playfair {
   font-family: "Playfair Display",serif;
   text-transform: none;
-  font-style: italic;
   color: white;
   font-size: xx-large;
 }

@@ -9,8 +9,8 @@
 <ion-content class="card-background-page test">
   <ion-grid>
     <div *ngIf="oeuvres !==''">
-      <ion-card [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms">
-        <img src={{oeuvre.image}}/>
+      <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms" class="samesize">
+        <img class="samesize" src={{oeuvre.image}}/>
         <div class="card-title">{{oeuvre.title}}</div>
         <div class="card-subtitle">{{oeuvre.author}}</div>
       </ion-card>

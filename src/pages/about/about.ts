@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { DetailPage } from '../detail/detail';
 import { ContactPage } from '../contact/contact';
-import { PlansPage } from '../plans/plans';
+import { ArtistPage } from '../artist/artist';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -20,12 +20,13 @@ export class AboutPage {
 
   constructor(public nav: NavController, public barcode: BarcodeScanner, private http: HttpClient) {
     this.nav = nav;
+
   }
   public goToOeuvres(){
     this.nav.push(ContactPage);
   }
-  public goToPlans(){
-    this.nav.push(PlansPage);
+  public goToArtists(){
+    this.nav.push(ArtistPage);
   }
 
 }

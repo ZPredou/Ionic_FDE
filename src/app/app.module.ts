@@ -16,6 +16,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { DetailPage } from '../pages/detail/detail';
 import { SchoolPage } from '../pages/school/school';
 import { PlansPage } from '../pages/plans/plans';
+import { ArtistPage } from '../pages/artist/artist';
+import { DetailOeuvrePage } from '../pages/detailOeuvre/detailOeuvre';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,7 +44,9 @@ import { Keyboard } from '@ionic-native/keyboard';
     DetailPage,
     SchoolPage,
     PlansPage,
-    FilterPipe
+    FilterPipe,
+    ArtistPage,
+    DetailOeuvrePage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +67,10 @@ import { Keyboard } from '@ionic-native/keyboard';
     TabsPage,
     DetailPage,
     SchoolPage,
-    PlansPage
+    ArtistPage,
+    PlansPage,
+    DetailOeuvrePage
+
   ],
   providers: [
     BarcodeScanner,
@@ -77,7 +84,7 @@ import { Keyboard } from '@ionic-native/keyboard';
     HttpClient,
     HttpClientModule,
     Keyboard,
-    DataProvider,
+    DataProvider
   ]
 })
 export class AppModule {}
