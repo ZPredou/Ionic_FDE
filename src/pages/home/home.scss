@@ -97,8 +97,11 @@ position: static;
 }
 /* Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  img.banner{
+    min-width:100%;
+    min-height:55vh;
+  }
   img.logo{
-    height:85vh;
     min-width:100%;
   }
   h1{
@@ -114,5 +117,42 @@ position: static;
   }
   button.calltofde{
     font-size: 25px;
+  }
+  .caption-wrap{
+    opacity: 1;
+    margin: 75px 38px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    clear: none;
+    position: absolute;
+    text-align: right;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+  }
+  .caption{
+    border-right: 1px solid #000;
+    margin-right: 15px;
+    padding-right:10px;
+  }
+  .caption-wrap .caption > h1{
+    font-size:50px;
+    text-align: right;
+  }
+  .caption-wrap .caption > h2{
+    font-size:35px;
+    text-align: right;
+    padding-top:20px;
+    text-transform: uppercase;
+    font-weight: 450;
+  }
+  .caption-wrap .caption > p{
+    font-size:20px;
+    text-align: right;
   }
 }
