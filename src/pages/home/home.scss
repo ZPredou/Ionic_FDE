@@ -158,4 +158,7 @@ position: static;
   .wrapping-title{
     padding-top:70px;
   }
+  ion-fab[top][edge]{
+    visibility: hidden;
+  }
 }
