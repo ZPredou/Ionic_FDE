@@ -83,16 +83,32 @@ video{
   background-position: center;
   background-size: cover;
 }
+.classyTitle{
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   header > h2{
     font-size:80px;
     line-height: 75px;
-    padding-bottom: 30%;
+    padding-top:15px;
+    margin-top:75px;
   }
   h3.schoolDesc{
     font-size:25px;
     margin-top:0;
     text-align: justify;
-    margin-bottom:30px;
+    margin-bottom:5%;
+  }
+
+  .mainslide{
+    height:40%;
+  }
+  ion-slides ion-slide img{
+    height:100%;
   }
 }
