@@ -5,20 +5,19 @@
 
 </ion-header>
 
-
 <ion-content padding class="no-scroll myview">
   <header>
     <h2 class="classyTitle">Résidence bio-inspirée</h2>
   </header>
-  <ion-slides class="mainslide">
+  <ion-slides pager #slides class="mainslide" autoplay="5000" loop="true" speed="500" pager="true" (ionSlideDidChange)="slideChanged()">
     <ion-slide>
-      <img src="assets/imgs/Mirrors.jpg">
+      <img src="assets/imgs/antvisuel2-compressor.jpg">
     </ion-slide>
     <ion-slide>
-      <img src="assets/imgs/Mirrors.jpg">
+      <img src="assets/imgs/antvisualcan-2-compressor.jpg">
     </ion-slide>
     <ion-slide>
-      <img src="assets/imgs/Mirrors.jpg">
+      <img src="assets/imgs/antvisuel.jpg">
     </ion-slide>
   </ion-slides>
   <h3 class="schoolDesc">Mathieu Corticchiato et Lucas Dauvergne sont les deux artistes lauréats de l'appel à projet pour cette résidence bio-inspirée. Leur oeuvre, intitulée CAN - Conception Assistée par la Nature, propose une immersion in vivo au coeur d'une organisation très précise, celle des Formicidae Oecophylla, dites «fourmis tisserandes». </h3>

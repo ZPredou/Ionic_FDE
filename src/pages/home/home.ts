@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Rx';
     providers: [[ToastController]]
 })
 export class HomePage{
-
   constructor(public navCtrl: NavController,private toastCtrl: ToastController) {
   }
+
 }

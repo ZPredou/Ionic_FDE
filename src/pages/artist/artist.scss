@@ -12,6 +12,9 @@ p.clickable{
   }
   .button-inner{
     font-size:1.7em!important;
-    color:red;
+  }
+  .button-inner.btncall{
+    color: white;
+    text-transform: uppercase;
   }
 }

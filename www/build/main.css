@@ -26607,7 +26607,10 @@ p.clickable {
   }
   .button-inner {
     font-size: 1.7em !important;
-    color: red;
+  }
+  .button-inner.btncall {
+    color: white;
+    text-transform: uppercase;
   }
 }
 
@@ -26914,6 +26917,54 @@ p > .undertext {
   opacity: 1;
 }
 
+.caption-wrap {
+  opacity: 1;
+  margin: 30px 10px 20px 15px;
+  color: black;
+  background: white;
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  clear: none;
+  position: absolute;
+  text-align: right;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+.caption {
+  border-right: 1px solid #000;
+  margin-right: 15px;
+  padding-right: 10px;
+}
+
+.caption-wrap .caption > h1 {
+  font-size: 28px;
+  text-align: right;
+}
+
+.caption-wrap .caption > h2 {
+  font-size: 21px;
+  text-align: right;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-weight: 450;
+  margin-bottom: 5px;
+}
+
+.caption-wrap .caption > p {
+  font-size: 15px;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.wrapping-title {
+  padding-top: 40px;
+}
+
 /* Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   img.banner {
@@ -26979,6 +27030,9 @@ p > .undertext {
   }
   ion-fab[top][edge] {
     visibility: hidden;
+  }
+  .wrapping-title {
+    padding-top: 70px;
   }
 }
 
@@ -27054,6 +27108,7 @@ header h2 {
   text-transform: none;
   color: white;
   font-size: xx-large;
+  text-transform: uppercase;
 }
 
 header {
@@ -27093,8 +27148,8 @@ video {
 }
 
 .myview {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../assets/imgs/antvisuel.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../assets/imgs/antvisuel.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../assets/imgs/antvisuel.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/imgs/antvisuel.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -27105,6 +27160,34 @@ video {
   width: 100%;
   font-weight: bold;
   color: #fff;
+}
+
+header > h2 {
+  font-size: 35px;
+  line-height: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mainslide {
+  height: 40%;
+}
+
+h3.schoolDesc {
+  font-size: 13px;
+  padding-top: 10px;
+  margin-top: 20px;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+
+body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-school > ion-content > div.scroll-content > h3:nth-child(3) {
+  border-top: 3px solid white;
+}
+
+.swiper-pagination-bullet-active {
+  background: red;
+  opacity: 1;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -27119,9 +27202,6 @@ video {
     margin-top: 0;
     text-align: justify;
     margin-bottom: 5%;
-  }
-  .mainslide {
-    height: 40%;
   }
   ion-slides ion-slide img {
     height: 100%;
