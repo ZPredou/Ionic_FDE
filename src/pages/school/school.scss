@@ -49,11 +49,12 @@ header h2 {
     transition: all,0.8s;
 }
 .playfair {
-    font-family: "Playfair Display",serif;
-    text-transform: none;
-    color:white;
-    font-size: xx-large;
-    text-transform: uppercase;
+  text-transform: none;
+  color: white;
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+  text-transform: uppercase;
 }
 header {
   position: relative;
@@ -90,6 +91,8 @@ video{
     width: 100%;
     font-weight: bold;
     color: #fff;
+    padding-bottom:10px !important;
+    margin-bottom:10px !important;
 }
 header > h2{
   font-size:35px;
@@ -101,9 +104,9 @@ header > h2{
   height:40%;
 }
 h3.schoolDesc{
-  font-size:13px;
+  font-size:12px;
   padding-top:10px;
-  margin-top:20px;
+  margin-top:10px;
   text-align: justify;
   margin-bottom:5%;
 }
@@ -123,7 +126,7 @@ opacity: 1;
     margin-top:75px;
   }
   h3.schoolDesc{
-    font-size:25px;
+    font-size:24px;
     margin-top:0;
     text-align: justify;
     margin-bottom:5%;

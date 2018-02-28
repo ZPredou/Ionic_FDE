@@ -10,11 +10,11 @@
   <ion-list>
     <ion-item [@fadeInOut] *ngFor="let oeuvre of oeuvres | search : terms">
       <ion-thumbnail item-start>
-        <img src={{oeuvre.image}}/>
+        <img (click)="goToDetail(oeuvre);" src={{oeuvre.image}}/>
       </ion-thumbnail>
       <h2 class="nomArtist">{{oeuvre.author}}</h2>
       <p (click)="goToDetail(oeuvre);" class="clickable">{{oeuvre.title}}</p>
-      <button ion-button clear item-end (click)="gotToDetailOeuvre(oeuvre);">+</button>
+      <button ion-button class="red" clear item-end (click)="gotToDetailOeuvre(oeuvre);">+</button>
     </ion-item>
   </ion-list>
   <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">

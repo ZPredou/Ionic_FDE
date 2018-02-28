@@ -124,16 +124,15 @@ let SchoolPage = class SchoolPage {
 };
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* Slides */]),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* Slides */]) === "function" && _a || Object)
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* Slides */])
 ], SchoolPage.prototype, "slides", void 0);
 SchoolPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
         selector: 'page-school',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/school/school.html"*/'<ion-header hidden>\n\n  <ion-navbar>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding class="no-scroll myview">\n  <header>\n    <h2 class="classyTitle">Résidence bio-inspirée</h2>\n  </header>\n  <ion-slides pager #slides class="mainslide" autoplay="5000" loop="true" speed="500" pager="true" (ionSlideDidChange)="slideChanged()">\n    <ion-slide>\n      <img src="assets/imgs/antvisuel2-compressor.jpg">\n    </ion-slide>\n    <ion-slide>\n      <img src="assets/imgs/antvisualcan-2-compressor.jpg">\n    </ion-slide>\n    <ion-slide>\n      <img src="assets/imgs/antvisuel.jpg">\n    </ion-slide>\n  </ion-slides>\n  <h3 class="schoolDesc">Mathieu Corticchiato et Lucas Dauvergne sont les deux artistes lauréats de l\'appel à projet pour cette résidence bio-inspirée. Leur oeuvre, intitulée CAN - Conception Assistée par la Nature, propose une immersion in vivo au coeur d\'une organisation très précise, celle des Formicidae Oecophylla, dites «fourmis tisserandes». </h3>\n  <h3 class="schoolDesc">Elles seront orientées par les artistes pour tisser des sculptures-nids avec leur propre soie, un véritable processus de coopération pour une finalité artistique. Elles sont installées dans leur vivarium, au sein même de la fondation et intégrées au récit des oeuvres environnantes.</h3>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/school/school.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */]])
 ], SchoolPage);
 
-var _a, _b, _c;
 //# sourceMappingURL=school.js.map
 
 /***/ }),
@@ -160,11 +159,11 @@ webpackEmptyAsyncContext.id = 164;
 
 var map = {
 	"../pages/detail/detail.module": [
-		482,
+		483,
 		3
 	],
 	"../pages/detailOeuvre/detailOeuvre.module": [
-		483,
+		482,
 		2
 	],
 	"../pages/plans/plans.module": [
@@ -387,7 +386,7 @@ let ContactPage = class ContactPage {
 };
 ContactPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title style="color:white;">\n      <ion-searchbar (window:keydown)="onKey($event)" [animated]="true" [(ngModel)]="terms" placeholder="Oeuvre/Artiste"></ion-searchbar>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="card-background-page test">\n  <ion-grid>\n    <div *ngIf="oeuvres !==\'\'">\n      <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms" class="samesize">\n        <img class="samesize" src={{oeuvre.image}}/>\n        <div class="card-title">{{oeuvre.title}}</div>\n        <div class="card-subtitle">{{oeuvre.author}}</div>\n      </ion-card>\n    </div>\n    <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">\n      <ion-card>\n        <ion-card-header>\n          <ion-row>\n            <ion-icon class="larger" name="sad"></ion-icon>\n          </ion-row>\n          <ion-row>\n            Oops !\n          </ion-row>\n        </ion-card-header>\n        <ion-card-content>\n          Aucune oeuvre ne correspond à cette recherche.\n        </ion-card-content>\n      </ion-card>\n    </div>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/,
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title style="color:white;">\n      <ion-searchbar (window:keydown)="onKey($event)" [animated]="true" [(ngModel)]="terms" placeholder="Oeuvre/Artiste"></ion-searchbar>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="card-background-page test">\n  <ion-grid>\n    <div *ngIf="oeuvres !==\'\'">\n      <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms" class="samesize">\n        <img class="samesize" src={{oeuvre.image}}/>\n        <div class="card-title">{{oeuvre.title}}</div>\n        <div class="card-subtitle">{{oeuvre.author}}</div>\n      </ion-card>\n    </div>\n    <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">\n      <ion-card [@fadeInOut] >\n        <ion-card-header>\n          <ion-row>\n            <ion-icon class="larger" name="sad"></ion-icon>\n          </ion-row>\n          <ion-row>\n            Oops !\n          </ion-row>\n        </ion-card-header>\n        <ion-card-content>\n          Aucune oeuvre ne correspond à cette recherche.\n        </ion-card-content>\n      </ion-card>\n    </div>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/,
         providers: [[__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */]]],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* trigger */])('fadeInOut', [
@@ -486,7 +485,7 @@ let ArtistPage = class ArtistPage {
 };
 ArtistPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-artist',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/artist/artist.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-searchbar (window:keydown)="onKey($event)" [animated]="true" [(ngModel)]="terms" placeholder="Trouvez votre artiste"></ion-searchbar>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding class="test">\n  <ion-list>\n    <ion-item [@fadeInOut] *ngFor="let oeuvre of oeuvres | search : terms">\n      <ion-thumbnail item-start>\n        <img src={{oeuvre.image}}/>\n      </ion-thumbnail>\n      <h2 class="nomArtist">{{oeuvre.author}}</h2>\n      <p (click)="goToDetail(oeuvre);" class="clickable">{{oeuvre.title}}</p>\n      <button ion-button clear item-end (click)="gotToDetailOeuvre(oeuvre);">+</button>\n    </ion-item>\n  </ion-list>\n  <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">\n    <ion-card>\n      <ion-card-header>\n        <ion-row>\n          <ion-icon class="larger" name="sad"></ion-icon>\n        </ion-row>\n        <ion-row>\n          Oops !\n        </ion-row>\n      </ion-card-header>\n      <ion-card-content>\n        Vous êtes sur que cet artiste fait parti de l\'exposition ?\n      </ion-card-content>\n    </ion-card>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/artist/artist.html"*/,
+        selector: 'page-artist',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/artist/artist.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-searchbar (window:keydown)="onKey($event)" [animated]="true" [(ngModel)]="terms" placeholder="Trouvez votre artiste"></ion-searchbar>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding class="test">\n  <ion-list>\n    <ion-item [@fadeInOut] *ngFor="let oeuvre of oeuvres | search : terms">\n      <ion-thumbnail item-start>\n        <img (click)="goToDetail(oeuvre);" src={{oeuvre.image}}/>\n      </ion-thumbnail>\n      <h2 class="nomArtist">{{oeuvre.author}}</h2>\n      <p (click)="goToDetail(oeuvre);" class="clickable">{{oeuvre.title}}</p>\n      <button ion-button class="red" clear item-end (click)="gotToDetailOeuvre(oeuvre);">+</button>\n    </ion-item>\n  </ion-list>\n  <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">\n    <ion-card>\n      <ion-card-header>\n        <ion-row>\n          <ion-icon class="larger" name="sad"></ion-icon>\n        </ion-row>\n        <ion-row>\n          Oops !\n        </ion-row>\n      </ion-card-header>\n      <ion-card-content>\n        Vous êtes sur que cet artiste fait parti de l\'exposition ?\n      </ion-card-content>\n    </ion-card>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/artist/artist.html"*/,
         providers: [__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */]],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* trigger */])('fadeInOut', [
@@ -534,10 +533,9 @@ HomePage = __decorate([
         selector: 'page-home',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homeBack">\n  <ion-fab top right edge #fab1>\n    <button ion-fab mini color="dark"><ion-icon name="heart"></ion-icon></button>\n    <ion-fab-list #fabList>\n      <div *ngIf="fabList.classList.contains(\'fab-list-active\')" class="backdrop" (click)="fab1.close();"></div>\n      <a button ion-fab href="https://fr-fr.facebook.com/fondationfrances/">\n        <ion-icon name="logo-facebook"></ion-icon>\n        <div class="label">Facebook</div>\n      </a>\n      <a button ion-fab href="https://twitter.com/FFrancesArt">\n        <ion-icon name="logo-twitter"></ion-icon>\n        <div class="label">Twitter</div>\n      </a>\n      <a button ion-fab href="tel:0688360209" clear>\n        <ion-icon name="call"></ion-icon>\n        <div class="label">Besoin d\'info ?</div>\n      </a>\n    </ion-fab-list>\n  </ion-fab>\n  <img class="banner" src="./assets/imgs/Eggbranch.jpg">\n  <div class="caption-wrap">\n    <div class="caption">\n      <h1>LA FABRIQUE DE L\'ESPRIT</h1>\n      <h2>Du regard à l\'expérience</h2>\n      <p>DU 23 FÉVRIER AU 24 AOÛT 2018</p>\n    </div>\n  </div>\n  <img class="logo" src="./assets/imgs/FDE-Unesco.png">\n  <div class="wrapping-title">\n    <h1> A propos ..</h1>\n    <h2> Nos projets d\'avenirs et nos offres culturels actuelles</h2>\n    <p class="undertext">Depuis sa création, La Fabrique de l\'Esprit® développe des contenus pédagogiques, élabore des programmes éducatifs culturels, à l’appui d’œuvres contemporaines, et des œuvres de la collection Francès. L’ensemble de ces programmes répond à des enjeux éducatifs, artistiques et culturels.</p>\n    <p class="undertext">En 2017, elle devient membre du mouvement des clubs français pour l’UNESCO. L’accréditation est émise par le Commission Nationale Française pour l’UNESCO. Un prolongement évident tant les missions accomplies répondent aux mêmes enjeux sur le plan de l’éducation, des échanges internationaux et du partage de connaissances pour conserver un patrimoine et défendre des valeurs de paix et de collaborations.</p>\n  </div>\n  <button ion-button full color="danger" class="calltofde btncall" onclick="window.open(\'http://lafabriquedelespritlesamis.fr/\', \'_blank\', \'location=yes\', \'zoom=no\');return false;">Voir le site de la FDE</button>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/home/home.html"*/,
         providers: [[__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ToastController */]]]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ToastController */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ToastController */]])
 ], HomePage);
 
-var _a, _b;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -736,8 +734,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/detail/detail.module#DetailPageModule', name: 'DetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/detailOeuvre/detailOeuvre.module#DetailOeuvrePageModule', name: 'DetailOeuvrePage', segment: 'detailOeuvre', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/detail/detail.module#DetailPageModule', name: 'DetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/plans/plans.module#PlansPageModule', name: 'PlansPage', segment: 'plans', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/school/school.module#SchoolPageModule', name: 'SchoolPage', segment: 'school', priority: 'low', defaultHistory: [] }
                 ]

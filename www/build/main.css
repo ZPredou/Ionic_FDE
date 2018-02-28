@@ -26597,6 +26597,14 @@ p.clickable {
   color: red;
 }
 
+h2.nomArtist {
+  text-align: left !important;
+}
+
+.red {
+  text-color: red;
+}
+
 /* Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   h2.nomArtist {
@@ -26638,7 +26646,7 @@ p.clickable {
 .card-background-page .card-subtitle {
   font-size: 1.0em;
   position: absolute;
-  top: 58%;
+  top: 70%;
   width: 100%;
   color: #fff;
 }
@@ -26677,6 +26685,10 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
 
 .test ion-grid {
   min-height: 100% !important;
+}
+
+ion-card > img.samesize {
+  height: 42vh !important;
 }
 
 /* Portrait*/
@@ -26942,12 +26954,12 @@ p > .undertext {
 }
 
 .caption-wrap .caption > h1 {
-  font-size: 28px;
+  font-size: 23px;
   text-align: right;
 }
 
 .caption-wrap .caption > h2 {
-  font-size: 21px;
+  font-size: 12px;
   text-align: right;
   padding-top: 5px;
   text-transform: uppercase;
@@ -26956,7 +26968,7 @@ p > .undertext {
 }
 
 .caption-wrap .caption > p {
-  font-size: 15px;
+  font-size: 9px;
   text-align: right;
   margin-top: 8px;
 }
@@ -27104,10 +27116,11 @@ header h2 {
 }
 
 .playfair {
-  font-family: "Playfair Display",serif;
   text-transform: none;
   color: white;
-  font-size: xx-large;
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -27160,6 +27173,8 @@ video {
   width: 100%;
   font-weight: bold;
   color: #fff;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 header > h2 {
@@ -27174,9 +27189,9 @@ header > h2 {
 }
 
 h3.schoolDesc {
-  font-size: 13px;
+  font-size: 12px;
   padding-top: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: justify;
   margin-bottom: 5%;
 }
@@ -27198,7 +27213,7 @@ body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs
     margin-top: 75px;
   }
   h3.schoolDesc {
-    font-size: 25px;
+    font-size: 24px;
     margin-top: 0;
     text-align: justify;
     margin-bottom: 5%;

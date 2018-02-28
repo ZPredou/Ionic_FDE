@@ -16,7 +16,7 @@
       </ion-card>
     </div>
     <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">
-      <ion-card>
+      <ion-card [@fadeInOut] >
         <ion-card-header>
           <ion-row>
             <ion-icon class="larger" name="sad"></ion-icon>
