@@ -159,11 +159,11 @@ webpackEmptyAsyncContext.id = 164;
 
 var map = {
 	"../pages/detail/detail.module": [
-		483,
+		482,
 		3
 	],
 	"../pages/detailOeuvre/detailOeuvre.module": [
-		482,
+		483,
 		2
 	],
 	"../pages/plans/plans.module": [
@@ -230,15 +230,6 @@ let TabsPage = class TabsPage {
         this.tab1Root = __WEBPACK_IMPORTED_MODULE_4__home_home__["a" /* HomePage */];
         this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__about_about__["a" /* AboutPage */];
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_3__school_school__["a" /* SchoolPage */];
-        this.keyboard = keyboard;
-        platform.ready().then(() => {
-            this.keyboard.onKeyboardShow().subscribe(() => {
-                this.superTabs.showToolbar(false);
-            });
-            this.keyboard.onKeyboardHide().subscribe(() => {
-                this.superTabs.showToolbar(true);
-            });
-        });
     }
     vibrate() {
         this.vibration.vibrate([30]);
@@ -386,7 +377,7 @@ let ContactPage = class ContactPage {
 };
 ContactPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title style="color:white;">\n      <ion-searchbar (window:keydown)="onKey($event)" [animated]="true" [(ngModel)]="terms" placeholder="Oeuvre/Artiste"></ion-searchbar>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="card-background-page test">\n  <ion-grid>\n    <div *ngIf="oeuvres !==\'\'">\n      <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms" class="samesize">\n        <img class="samesize" src={{oeuvre.image}}/>\n        <div class="card-title">{{oeuvre.title}}</div>\n        <div class="card-subtitle">{{oeuvre.author}}</div>\n      </ion-card>\n    </div>\n    <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">\n      <ion-card [@fadeInOut]>\n        <ion-card-header>\n          <ion-row>\n            <ion-icon class="larger" name="sad"></ion-icon>\n          </ion-row>\n          <ion-row>\n            Oops !\n          </ion-row>\n        </ion-card-header>\n        <ion-card-content>\n          Aucune oeuvre ne correspond à cette recherche.\n        </ion-card-content>\n      </ion-card>\n    </div>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/,
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-searchbar (window:keydown)="onKey($event)" [animated]="true" [(ngModel)]="terms" placeholder="Oeuvre/Artiste"></ion-searchbar>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="card-background-page test">\n  <ion-grid>\n    <div *ngIf="oeuvres !==\'\'">\n      <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms" class="samesize">\n        <img class="samesize" src={{oeuvre.image}}/>\n        <div class="card-title">{{oeuvre.title}}</div>\n        <div class="card-subtitle">{{oeuvre.author}}</div>\n      </ion-card>\n    </div>\n    <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">\n      <ion-card [@fadeInOut]>\n        <ion-card-header>\n          <ion-row>\n            <ion-icon class="larger" name="sad"></ion-icon>\n          </ion-row>\n          <ion-row>\n            Oops !\n          </ion-row>\n        </ion-card-header>\n        <ion-card-content>\n          Aucune oeuvre ne correspond à cette recherche.\n        </ion-card-content>\n      </ion-card>\n    </div>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/staff/Desktop/ProjetsIonic/Ionic_FDE/src/pages/contact/contact.html"*/,
         providers: [[__WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */]]],
         animations: [
             Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* trigger */])('fadeInOut', [
@@ -445,7 +436,7 @@ let ArtistPage = class ArtistPage {
         this.currentCount = 0;
         this.nav = nav;
     }
-    ionViewWillLoad() {
+    ionViewDidLoad() {
         let loader = this.loading.create({
             content: 'Récupération des artistes',
         });
@@ -734,8 +725,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/detailOeuvre/detailOeuvre.module#DetailOeuvrePageModule', name: 'DetailOeuvrePage', segment: 'detailOeuvre', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/detail/detail.module#DetailPageModule', name: 'DetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/detailOeuvre/detailOeuvre.module#DetailOeuvrePageModule', name: 'DetailOeuvrePage', segment: 'detailOeuvre', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/plans/plans.module#PlansPageModule', name: 'PlansPage', segment: 'plans', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/school/school.module#SchoolPageModule', name: 'SchoolPage', segment: 'school', priority: 'low', defaultHistory: [] }
                 ]
@@ -828,6 +819,7 @@ let MyApp = class MyApp {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
             splashScreen.hide();
+            statusBar.overlaysWebView(true);
             this._OneSignal.startInit('b532d545-0594-4d4c-9f34-cc6e3daf1056', '337865225097');
             this._OneSignal.inFocusDisplaying(this._OneSignal.OSInFocusDisplayOption.Notification);
             this._OneSignal.setSubscription(true);

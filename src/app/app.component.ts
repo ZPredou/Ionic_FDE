@@ -27,6 +27,7 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       splashScreen.hide();
+      statusBar.overlaysWebView(true);
       this._OneSignal.startInit('b532d545-0594-4d4c-9f34-cc6e3daf1056', '337865225097');
       this._OneSignal.inFocusDisplaying(this._OneSignal.OSInFocusDisplayOption.Notification);
       this._OneSignal.setSubscription(true);

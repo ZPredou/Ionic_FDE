@@ -20,16 +20,6 @@ export class TabsPage {
   tab3Root = SchoolPage;
 
   constructor(private vibration: Vibration, private superTabsCtrl: SuperTabsController, public platform: Platform, public keyboard: Keyboard) {
-    this.keyboard = keyboard;
-    platform.ready().then(() => {
-                this.keyboard.onKeyboardShow().subscribe(() => {
-                    this.superTabs.showToolbar(false);
-                });
-
-                this.keyboard.onKeyboardHide().subscribe(() => {
-                    this.superTabs.showToolbar(true);
-                });
-    });
   }
 
   private vibrate(){
