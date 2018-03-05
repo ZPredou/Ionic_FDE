@@ -30,7 +30,7 @@ export class ArtistPage {
     this.nav = nav;
   }
 
-  ionViewWillLoad(){
+  ionViewDidLoad(){
     let loader = this.loading.create({
       content: 'Récupération des artistes',
     });

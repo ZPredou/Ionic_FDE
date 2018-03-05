@@ -26574,6 +26574,11 @@ super-tab-button:last-child {
   color: green;
 }
 
+.wrap-share {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 img.darken {
   -webkit-filter: brightness(50%);
   -moz-filter: brightness(50%);
@@ -26999,6 +27004,7 @@ p > .undertext {
   }
   button.calltofde {
     font-size: 25px;
+    height: 16%;
   }
   .caption-wrap {
     opacity: 1;
@@ -27198,6 +27204,7 @@ h3.schoolDesc {
 
 body > ion-app > ng-component > ion-nav > ng-component > super-tabs > super-tabs-container > div > super-tab:nth-child(3) > page-school > ion-content > div.scroll-content > h3:nth-child(3) {
   border-top: 3px solid white;
+  margin-top: 10px;
 }
 
 .swiper-pagination-bullet-active {
