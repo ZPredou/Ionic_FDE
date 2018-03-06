@@ -1,4 +1,4 @@
-import { Component, Injectable, trigger, state, style, animate, transition } from '@angular/core';
+import { Component, Injectable, trigger, state, style, animate, transition, ElementRef } from '@angular/core';
 import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
 import { DetailPage } from '../detail/detail';
@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { DataProvider } from '../../providers/data/data';
 import { DetailOeuvrePage } from '../detailOeuvre/detailOeuvre';
 import * as firebase from 'firebase';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @Component({
   selector: 'page-artist',
@@ -26,7 +27,10 @@ export class ArtistPage {
   actualOeuvres:any[] = [];
   loader;
   currentCount=0;
-  constructor(public nav: NavController, private http: HttpClient ,private _data: DataProvider ,public loading: LoadingController ,private vibration: Vibration) {
+  defaultImage = 'https://www.placecage.com/1000/1000';
+  offset = 100;
+
+  constructor(public nav: NavController, private http: HttpClient ,private elmRef: ElementRef,private _data: DataProvider ,public loading: LoadingController ,private vibration: Vibration) {
     this.nav = nav;
   }
 

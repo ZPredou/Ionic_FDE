@@ -4,11 +4,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="card-background-page test">
+<ion-content class="card-background-page test" #container >
   <ion-grid>
     <div *ngIf="oeuvres !==''">
       <ion-card  [@fadeInOut] (click)="goToDetail(oeuvre); vibrate();" *ngFor="let oeuvre of oeuvres | search : terms" class="samesize">
-        <img class="samesize" src={{oeuvre.image}}/>
+        <img class="samesize" [scrollTarget]="container._scrollContent.nativeElement" [lazyLoad]="oeuvre.image" [defaultImage]="defaultImage">
         <div class="card-title">{{oeuvre.title}}</div>
         <div class="card-subtitle">{{oeuvre.author}}</div>
       </ion-card>

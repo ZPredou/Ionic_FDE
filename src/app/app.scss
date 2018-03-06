@@ -365,3 +365,10 @@ super-tab-button:last-child{
   margin-top:2%;
   margin-bottom:2%;
 }
+img.ng-lazyloaded {
+    animation: fadein .5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

@@ -31,6 +31,7 @@ import { SuperTabsModule } from 'ionic2-super-tabs';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 import { Keyboard } from '@ionic-native/keyboard';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 
@@ -56,7 +57,8 @@ import { Keyboard } from '@ionic-native/keyboard';
     SuperTabsModule.forRoot(),
     SuperTabsModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    LazyLoadImageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

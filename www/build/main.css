@@ -26389,7 +26389,6 @@ super-tab {
 
 super-tabs-container {
   width: 100%;
-  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26575,6 +26574,29 @@ super-tab-button:last-child {
 .wrap-share {
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+img.ng-lazyloaded {
+  -webkit-animation: fadein .5s;
+  animation: fadein .5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 img.darken {

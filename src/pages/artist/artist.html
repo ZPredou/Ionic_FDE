@@ -6,11 +6,11 @@
 
 </ion-header>
 
-<ion-content padding class="test">
+<ion-content padding class="test" #container >
   <ion-list>
     <ion-item [@fadeInOut] *ngFor="let oeuvre of oeuvres | search : terms">
       <ion-thumbnail item-start>
-        <img (click)="goToDetail(oeuvre);" src={{oeuvre.image}}/>
+        <img (click)="goToDetail(oeuvre);" [scrollTarget]="container._scrollContent.nativeElement" [lazyLoad]="oeuvre.image" [defaultImage]="defaultImage" />
       </ion-thumbnail>
       <h2 class="nomArtist">{{oeuvre.author}}</h2>
       <p (click)="goToDetail(oeuvre);" class="clickable">{{oeuvre.title}}</p>
