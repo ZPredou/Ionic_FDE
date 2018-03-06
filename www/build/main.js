@@ -167,11 +167,11 @@ var map = {
 		2
 	],
 	"../pages/plans/plans.module": [
-		485,
+		484,
 		1
 	],
 	"../pages/school/school.module": [
-		484,
+		485,
 		0
 	]
 };
@@ -727,8 +727,8 @@ AppModule = __decorate([
                 links: [
                     { loadChildren: '../pages/detail/detail.module#DetailPageModule', name: 'DetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/detailOeuvre/detailOeuvre.module#DetailOeuvrePageModule', name: 'DetailOeuvrePage', segment: 'detailOeuvre', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/school/school.module#SchoolPageModule', name: 'SchoolPage', segment: 'school', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/plans/plans.module#PlansPageModule', name: 'PlansPage', segment: 'plans', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/plans/plans.module#PlansPageModule', name: 'PlansPage', segment: 'plans', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/school/school.module#SchoolPageModule', name: 'SchoolPage', segment: 'school', priority: 'low', defaultHistory: [] }
                 ]
             }),
             __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */],

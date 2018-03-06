@@ -11,6 +11,7 @@ import { Platform } from 'ionic-angular';
   templateUrl: 'tabs.html',
   providers: [[Vibration]]
 })
+
 export class TabsPage {
 
 @ViewChild(SuperTabs) superTabs: SuperTabs;

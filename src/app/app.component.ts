@@ -15,6 +15,7 @@ const config = {
   storageBucket: "dothingsonionic.appspot.com",
   messagingSenderId: "337865225097"
 };
+
 @Component({
   templateUrl: 'app.html',
   providers: [DataProvider],
