@@ -1,4 +1,4 @@
-# Ionic_CDDC
+# Ionic_FDE
 
 This Ionic application will be used as a base template to create interactive guides to the upcoming Art Exposition that 'll happen in the future.
 
@@ -23,20 +23,20 @@ $ npm install -g ionic cordova
 Clone the folder
 
 ```
-$ git clone https://github.com/ZPredou/Ionic_CDDC.git
+$ git clone https://github.com/ZPredou/Ionic_FDE.git
 ```
 
 Then launch the server in this project's folder.
 
 ```
-$ cd Ionic_CDDC
+$ cd Ionic_FDE
 $ ionic serve
 ```
 
 
 ## Contributing
 
-[Just contact me :)](https://github.com/ZPredou)
+Why would you ?! :o 
 
 
 ## Authors
