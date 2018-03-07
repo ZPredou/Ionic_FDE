@@ -26389,6 +26389,7 @@ super-tab {
 
 super-tabs-container {
   width: 100%;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -26644,6 +26645,9 @@ h2.nomArtist {
   .button-inner.btncall {
     color: white;
     text-transform: uppercase;
+  }
+  p.clickable {
+    padding-top: 40px;
   }
 }
 
