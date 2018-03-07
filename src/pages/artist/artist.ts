@@ -27,7 +27,7 @@ export class ArtistPage {
   actualOeuvres:any[] = [];
   loader;
   currentCount=0;
-  defaultImage = 'https://www.placecage.com/1000/1000';
+  defaultImage = './assets/imgs/placeholder-compressor.png';
   offset = 100;
 
   constructor(public nav: NavController, private http: HttpClient ,private elmRef: ElementRef,private _data: DataProvider ,public loading: LoadingController ,private vibration: Vibration) {

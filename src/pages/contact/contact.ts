@@ -29,7 +29,7 @@ export class ContactPage{
   searchText='';
   actualOeuvres:any[] = [];
   loader;
-  defaultImage = 'https://www.placecage.com/1000/1000';
+  defaultImage = './assets/imgs/placeholder-compressor.png';
   offset = 100;
 
   constructor(public nav: NavController ,private elmRef: ElementRef, private vibration: Vibration ,private http: HttpClient ,private _data: DataProvider ,public loading: LoadingController) {
