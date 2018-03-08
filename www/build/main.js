@@ -159,19 +159,19 @@ webpackEmptyAsyncContext.id = 173;
 
 var map = {
 	"../pages/detail/detail.module": [
-		523,
+		524,
 		3
 	],
 	"../pages/detailOeuvre/detailOeuvre.module": [
-		525,
+		523,
 		2
 	],
 	"../pages/plans/plans.module": [
-		524,
+		526,
 		1
 	],
 	"../pages/school/school.module": [
-		526,
+		525,
 		0
 	]
 };
@@ -736,10 +736,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                 links: [
-                    { loadChildren: '../pages/detail/detail.module#DetailPageModule', name: 'DetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/plans/plans.module#PlansPageModule', name: 'PlansPage', segment: 'plans', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/detailOeuvre/detailOeuvre.module#DetailOeuvrePageModule', name: 'DetailOeuvrePage', segment: 'detailOeuvre', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/school/school.module#SchoolPageModule', name: 'SchoolPage', segment: 'school', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/detail/detail.module#DetailPageModule', name: 'DetailPage', segment: 'detail', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/school/school.module#SchoolPageModule', name: 'SchoolPage', segment: 'school', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/plans/plans.module#PlansPageModule', name: 'PlansPage', segment: 'plans', priority: 'low', defaultHistory: [] }
                 ]
             }),
             __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */],
