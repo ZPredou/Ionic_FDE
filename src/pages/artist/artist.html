@@ -12,9 +12,9 @@
       <ion-thumbnail item-start>
         <img (click)="goToDetail(oeuvre);" [scrollTarget]="container._scrollContent.nativeElement" [lazyLoad]="oeuvre.image" [defaultImage]="defaultImage" />
       </ion-thumbnail>
-      <h2 class="nomArtist">{{oeuvre.author}}</h2>
-      <p (click)="goToDetail(oeuvre);" class="clickable">{{oeuvre.title}}</p>
-      <button ion-button class="red" clear item-end (click)="gotToDetailOeuvre(oeuvre);">+</button>
+      <h2 class="nomArtist" (click)="gotToDetailOeuvre(oeuvre);">{{oeuvre.author}}</h2>
+      <p class="clickable">{{oeuvre.title}}</p>
+      <button style="font-size:15px" ion-button class="red" clear item-end (click)="gotToDetailOeuvre(oeuvre);">+</button>
     </ion-item>
   </ion-list>
   <div *ngIf="(oeuvres | search: terms).length === 0" class="emptyState">

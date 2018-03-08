@@ -26633,6 +26633,10 @@ h2.nomArtist {
 
 /* Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .item-ios ion-thumbnail ion-img, .item-ios ion-thumbnail img {
+    height: 90px;
+    width: 90px;
+  }
   h2.nomArtist {
     font-size: 3.5rem !important;
   }
@@ -26905,11 +26909,12 @@ button.fab.fab-md.fab-close-active {
   z-index: 1;
 }
 
-img .logo {
-  height: 35vh;
-  width: 100%;
+img.logo {
+  width: 50%;
   margin: auto;
   display: block;
+  left: 0;
+  margin: 0;
 }
 
 .wrapping-title {
@@ -26964,8 +26969,8 @@ p > .undertext {
   color: black;
   background: white;
   background: rgba(255, 255, 255, 0);
-  width: 100%;
-  top: 0;
+  width: 75%;
+  top: 72vh;
   right: 0;
   bottom: 0;
   left: auto;
@@ -26983,27 +26988,38 @@ p > .undertext {
 }
 
 .caption-wrap .caption > h1 {
-  font-size: 23px;
+  font-size: 12px;
   text-align: right;
+  margin-bottom: 0px;
 }
 
 .caption-wrap .caption > h2 {
-  font-size: 12px;
+  font-size: 9px;
   text-align: right;
-  padding-top: 5px;
   text-transform: uppercase;
   font-weight: 450;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .caption-wrap .caption > p {
-  font-size: 9px;
+  font-size: 7px;
   text-align: right;
-  margin-top: 8px;
+  margin: 0;
 }
 
 .wrapping-title {
   padding-top: 40px;
+}
+
+img.banner {
+  visibility: none;
+  height: 0px;
+}
+
+img.banner-mobile {
+  min-width: 100%;
+  max-height: 70vh;
+  visibility: visible;
 }
 
 /* Portrait*/
@@ -27011,9 +27027,14 @@ p > .undertext {
   img.banner {
     min-width: 100%;
     min-height: 55vh;
+    visibility: visible;
+  }
+  img.banner-mobile {
+    visibility: none;
+    height: 0px;
   }
   img.logo {
-    min-width: 100%;
+    min-width: 50%;
   }
   h1 {
     font-size: 80px;
@@ -27031,46 +27052,35 @@ p > .undertext {
     height: 16%;
   }
   .caption-wrap {
-    opacity: 1;
-    margin: 75px 38px;
-    color: black;
-    background: white;
-    background: rgba(255, 255, 255, 0);
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: auto;
-    clear: none;
-    position: absolute;
-    text-align: right;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
+    top: 57vh;
   }
   .caption {
     border-right: 1px solid #000;
     margin-right: 15px;
     padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .caption-wrap .caption > h1 {
-    font-size: 50px;
+    font-size: 28px;
     text-align: right;
   }
   .caption-wrap .caption > h2 {
-    font-size: 35px;
+    font-size: 20px;
     text-align: right;
     padding-top: 20px;
     text-transform: uppercase;
     font-weight: 450;
   }
   .caption-wrap .caption > p {
-    font-size: 20px;
+    font-size: 16px !important;
     text-align: right;
+    padding-top: 10px;
   }
   .wrapping-title {
     padding-top: 70px;
   }
-  ion-fab[top][edge] {
+  ion-fab[top] {
     visibility: hidden;
   }
   .wrapping-title {

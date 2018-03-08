@@ -1,10 +1,5 @@
-<ion-header>
-  <ion-navbar>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding class="homeBack">
-  <ion-fab top right edge #fab1>
+  <ion-fab top right #fab1>
     <button ion-fab mini color="dark"><ion-icon name="heart"></ion-icon></button>
     <ion-fab-list #fabList>
       <div *ngIf="fabList.classList.contains('fab-list-active')" class="backdrop" (click)="fab1.close();"></div>
@@ -22,6 +17,7 @@
       </a>
     </ion-fab-list>
   </ion-fab>
+  <img class="banner-mobile" src="./assets/imgs/Salagrama.jpg">
   <img class="banner" src="./assets/imgs/Eggbranch.jpg">
   <div class="caption-wrap">
     <div class="caption">

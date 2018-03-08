@@ -32,7 +32,7 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="orientation" value="portrait" />
     <platform name="android">
-        <preference name="ShowSplashScreenSpinner" value="false"/>
+        <preference name="ShowSplashScreenSpinner" value="false" />
         <preference name="StatusBarStyle" value="lightcontent" />
         <preference name="loadUrlTimeoutValue" value="700000" />
         <allow-intent href="market:*" />

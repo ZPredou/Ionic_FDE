@@ -11,6 +11,10 @@ h2.nomArtist{
 
 /* Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .item-ios ion-thumbnail ion-img, .item-ios ion-thumbnail img{
+    height:90px;
+    width:90px;
+  }
   h2.nomArtist{
     font-size: 3.5rem !important;
   }
