@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
-@IonicPage()
 @Component({
   selector: 'page-school',
   templateUrl: 'school.html',

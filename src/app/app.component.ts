@@ -26,7 +26,7 @@ export class MyApp {
   constructor(platform: Platform, statusBar: StatusBar, private _OneSignal: OneSignal, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+      // Here you can do any higher level native things you might  need.
       splashScreen.hide();
       statusBar.hide();
       this._OneSignal.startInit('b532d545-0594-4d4c-9f34-cc6e3daf1056', '337865225097');
@@ -43,4 +43,5 @@ export class MyApp {
 
     firebase.initializeApp(config);
   }
+
 }

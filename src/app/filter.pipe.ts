@@ -1,10 +1,5 @@
 import { Pipe, PipeTransform, OnInit } from '@angular/core';
 
-/**
- * Generated class for the OeuvreTitleFilterPipe pipe.
- *
- * See https://angular.io/api/core/Pipe for more info on Angular Pipes.
- */
 @Pipe({
   name: 'search',
 })

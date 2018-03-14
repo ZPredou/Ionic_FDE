@@ -4,11 +4,9 @@ import { Vibration } from '@ionic-native/vibration';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SocialSharing } from '@ionic-native/social-sharing';
 
-@IonicPage()
 @Component({
   selector: 'page-detail',
   templateUrl: 'detail.html',
-  providers: [[Vibration]]
 })
 export class DetailPage {
   title:string;

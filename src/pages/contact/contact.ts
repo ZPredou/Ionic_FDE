@@ -19,7 +19,6 @@ import { Observable } from 'rxjs/Observable';
       transition('void <=> *', animate('250ms ease-in'))
     ])
   ],
-
 })
 @Injectable()
 export class ContactPage{

@@ -5,7 +5,6 @@ import { DetailPage } from '../detail/detail';
 import { HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-@IonicPage()
 @Component({
   selector: 'page-plans',
   templateUrl: 'plans.html',

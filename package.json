@@ -55,6 +55,7 @@
     "ionic-plugin-keyboard": "^2.2.1",
     "ionic2-super-tabs": "^4.1.5",
     "ionicons": "3.0.0",
+    "ios-deploy": "^1.9.2",
     "ng-lazyload-image": "^3.4.2",
     "onesignal-cordova-plugin": "^2.2.4",
     "phonegap-plugin-barcodescanner": "~7.0.0",
